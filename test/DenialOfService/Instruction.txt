@@ -2,7 +2,8 @@ TEST
 forge test --match-contract ContractTestDOS -vvvv
 
 DEBUGG
-forge debug --debug test/Aritmetic2/Overflow2.sol --target-contract ContractTest --sig "testDOS()"
+forge debug --debug test/Aritmetic2/Overflow2.sol --target-contract ContractTestDOS --sig "testDOS()"
 
 GAS REPORT
-forge test --gas-report --contracts ./test/DenialOfservice/DOS.sol 
+forge test --gas-report --contracts ./test
+forge test --gas-report  --match-contract ContractTestDOS 
