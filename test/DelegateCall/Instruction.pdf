@@ -1,0 +1,9 @@
+TEST
+forge test --match-contract ContractTestDelegatecall -vvvv
+
+DEBUGG
+forge debug --debug test/DelegateCall/DelegateCall.sol --target-contract ContractTestDelegatecall --sig "testDelegatecall()"
+
+GAS REPORT
+forge test --gas-report --contracts ./test/DelegateCall/DelegateCall.sol 
+forge test --gas-report  --match-contract ContractTestDelegatecall

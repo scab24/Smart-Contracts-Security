@@ -1,0 +1,9 @@
+TEST
+forge test --match-contract ContractTestOverflow1 -vvvv
+
+DEBUGG
+forge debug --debug test/Arithmetic1/Overflow.sol --target-contract ContractTestOverflow --sig "testFailOverflow()"
+
+GAS REPORT
+forge test --gas-report --contracts ./test/Aritmetic1/Overflow.sol 
+forge test --gas-report --match-contract ContractTestOverflow1 

@@ -1,0 +1,10 @@
+TEST
+forge test --contracts ./test/Reentrancy/Reentrancy.sol -vvv
+forge test --match-contract ContractTestReentrancy -vv
+
+DEBUGG
+forge debug --debug test/Reentrancy/Reentrancy.sol --target-contract ContractTestReentrancy --sig "testReentrancy()"
+
+GAS REPORT
+forge test --gas-report --contracts ./test/Reentrancy/Reentrancy.sol  
+forge test --gas-report  --match-contract ContractTestReentrancy 

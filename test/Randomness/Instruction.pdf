@@ -1,0 +1,9 @@
+TEST
+forge test --match-contract ContractTestRandomness -vvvv
+
+DEBUGG
+forge debug --debug test/Randomness/Randomness.sol --target-contract ContractTestRandomness --sig "testRandomness()"
+
+GAS REPORT
+forge test --gas-report --contracts ./test
+forge test --gas-report  --match-contract ContractTestRandomness 
