@@ -1,10 +1,10 @@
-pragma solidity ^0.7.0;
+// Note: The issues from exercise 1 and 2 are fixed
 
 contract Ownership{
 
     address owner = msg.sender;
 
-    function Owner() public{
+    constructor() public {
         owner = msg.sender;
     }
 
@@ -37,6 +37,7 @@ contract Token is Pausable{
     mapping(address => uint) public balances;
 
     function transfer(address to, uint value) ifNotPaused public{
+        require(balances[msg.sender] >= value);
         balances[msg.sender] -= value;
         balances[to] += value;
     }

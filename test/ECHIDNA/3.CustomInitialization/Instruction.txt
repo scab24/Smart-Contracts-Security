@@ -1,0 +1,4 @@
+Call sequence:                                                                                                                                                                                          
+1.mint(96630461827592406824117123399527024486325951824057926638922394187655300856523) Time delay: 395930 seconds                                                                                        
+Block delay: 38072                                                                                                                                                                                     
+2.transfer(0x10000,1524785991) Time delay: 296938 seconds Block delay: 22028   
