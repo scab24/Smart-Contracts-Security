@@ -2,7 +2,7 @@ TEST
 forge test --match-contract ContractTestOverflow1 -vvvv
 
 DEBUGG
-forge debug --debug test/Arithmetic1/Overflow.sol --target-contract ContractTestOverflow --sig "testFailOverflow()"
+forge debug --debug test/FOUNDRY/Arithmetic1/Overflow.sol --target-contract ContractTestOverflow1 --sig "testFailOverflow()"
 
 GAS REPORT
 forge test --gas-report --contracts ./test/Aritmetic1/Overflow.sol 

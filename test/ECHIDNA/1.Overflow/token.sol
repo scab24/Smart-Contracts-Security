@@ -1,5 +1,4 @@
 pragma solidity ^0.7.0;
-import "lib/forge-std/src/Test.sol";
 contract Ownership{
 
     address owner = msg.sender;
@@ -42,27 +41,27 @@ contract Token is Pausable{
     }
 }
 
-contract ContractTestOverflowEchidna is Test {
-    Token token;
-    address bob;
-    address alice;
+// contract ContractTestOverflowEchidna is Test {
+//     Token token;
+//     address bob;
+//     address alice;
 
-    function setUp() public {
-        token = new Token();
-        bob = vm.addr(1); 
-        alice = vm.addr(2);
-    }    
+//     function setUp() public {
+//         token = new Token();
+//         bob = vm.addr(1); 
+//         alice = vm.addr(2);
+//     }    
            
-    function testFailOverflow() public {
-          console.log("Bob balance",token.balances(bob));
-          console.log("alice balance", token.balances(alice));
+//     function testFailOverflow() public {
+//           console.log("Bob balance",token.balances(bob));
+//           console.log("alice balance", token.balances(alice));
 
 
-        vm.startPrank(bob); 
-        token.transfer(address(alice),107232039821192505912276464474276136537657115717368904133971284);
-        console.log("Bob balance",token.balances(bob));
-        console.log("alice balance", token.balances(alice));
+//         vm.startPrank(bob); 
+//         token.transfer(address(alice),107232039821192505912276464474276136537657115717368904133971284);
+//         console.log("Bob balance",token.balances(bob));
+//         console.log("alice balance", token.balances(alice));
 
-        vm.stopPrank();
-    }
-}
+//         vm.stopPrank();
+//     }
+// }
