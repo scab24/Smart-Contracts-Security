@@ -1,0 +1,4 @@
+docker run -it --rm -v $PWD:/code trailofbits/eth-security-toolbox
+cd /code
+
+slither Randomness/Randomness.sol
