@@ -4,8 +4,10 @@ In this repository I will be uploading smart contract vulnerabilities with their
 - Foundry
 - Echidna
 - Slither
-- Certora
-- Mythril
+- Gas Optimization
+- Mantincore
+- Huff
+- Woke
 
 I will also describe with examples how gas could be optimized when developing smart contracts.
 
