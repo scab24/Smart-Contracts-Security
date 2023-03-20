@@ -45,7 +45,7 @@ contract ContractTestReentrancy is Test {
 //========================================================================================================================
 //========================================================================================================================
 
-contract EtherStoreAttack is DSTest { 
+contract EtherStoreAttack is Test { 
     EtherStore store;
     constructor(address _store) public {
         store = EtherStore(_store);

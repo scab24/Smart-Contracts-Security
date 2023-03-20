@@ -65,3 +65,26 @@ contract ContractTestOverflow1 is Test {
     }
 }
 //=====================================================================================
+contract ContractTestOverflow1INVARIANT is Test {
+    TimeLock TimeLockContract;
+    address bob;
+
+    function setUp() public {
+        TimeLockContract = new TimeLock();
+        bob = vm.addr(1); 
+        vm.deal(bob, 1 ether);
+    }    
+           
+    function testFailOverflowInvariant(uint256 numero) public {
+        vm.expectRevert("Lock time not expired");
+
+        vm.startPrank(bob); 
+        TimeLockContract.deposit{value: 1 ether}();
+
+        // exploit here
+        TimeLockContract.increaseLockTime(numero);
+    
+        TimeLockContract.withdraw();
+        vm.stopPrank();
+    }
+}
