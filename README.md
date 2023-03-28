@@ -76,7 +76,5 @@ NOTION
 - [Security Researcher Dashboard](https://www.notion.so/Security-Researcher-Dashboard-8f742178141845129b0a3dee19c1703f)
 - [Resource Repository](https://www.notion.so/Resource-Repository-723fb28089d04633823550fa286c4b52)
 - [Blockchain security guide](https://www.notion.so/Blockchain-security-guide-b26aec3d920e414d8a354618d3e36eb4)
-
-[Resources](https://www.web3securitydao.xyz/collaborating/resources)
-
+- [Resources](https://www.web3securitydao.xyz/collaborating/resources)
 - [https://www.notion.so/Ethereum-rareskill-quizz-by-WebtrES-8bdc863bc1c04238a709b0d2cf8d353c#7a3b8c5790004f2ab724e70229f2ce62](https://www.notion.so/Ethereum-rareskill-quizz-by-WebtrES-8bdc863bc1c04238a709b0d2cf8d353c)
