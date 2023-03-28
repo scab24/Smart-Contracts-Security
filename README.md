@@ -16,6 +16,8 @@ In each type of vulnerabilities are the instructions to run the code.
 
 ## Resources
 
+##https://github.com/scab24?tab=stars
+
 YOUTUBE
 
 - ESPAÑOL
